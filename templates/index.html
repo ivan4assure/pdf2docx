@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertir PDF a DOCX</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertir PDF a DOCX</h1>
+        <form method="post" enctype="multipart/form-data">
+            <div class="upload-section">
+                <input type="file" name="file" accept="application/pdf" id="file-input">
+                <label for="file-input">Seleccionar archivo</label>
+            </div>
+            <input type="submit" value="Convertir" class="btn">
+        </form>
+    </div>
+</body>
+</html>
